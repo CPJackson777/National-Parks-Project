@@ -7,7 +7,7 @@
 
 
 fetch("http://localhost:8088/parks")
-    .then(response => response.json())
+    .then(parks => parks.json())
     .then(parsedParks => {
         console.log(parsedParks)
     })
